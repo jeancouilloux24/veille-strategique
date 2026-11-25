@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Veille rapide sur les actualités récentes du recrutement chez Lidl France, vérifiées au 25 novembre 2026.">
+  <title>Recrutement Lidl France — veille rapide</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #647084;
+      --paper: #f5f7fb;
+      --card: #fff;
+      --line: #e0e5ee;
+      --blue: #0050aa;
+      --red: #c90032;
+      --yellow: #ffd500;
+      --green: #157347;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    a { color: var(--blue); text-underline-offset: 3px; }
+    a:hover { color: #003b7d; }
+
+    .masthead {
+      border-bottom: 4px solid var(--yellow);
+      background: var(--blue);
+      color: white;
+    }
+
+    .masthead-inner, main, footer {
+      width: min(100% - 40px, 980px);
+      margin-inline: auto;
+    }
+
+    .masthead-inner { padding: 46px 0 42px; }
+    .eyebrow {
+      margin: 0 0 10px;
+      color: #dceaff;
+      font-size: .78rem;
+      font-weight: 750;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.08;
+      letter-spacing: -.04em;
+    }
+
+    .dek {
+      max-width: 700px;
+      margin: 18px 0 0;
+      color: #edf4ff;
+      font-size: 1.08rem;
+    }
+
+    .dateline {
+      display: inline-flex;
+      margin-top: 24px;
+      padding: 6px 11px;
+      border: 1px solid #ffffff70;
+      border-radius: 999px;
+      color: white;
+      font-size: .88rem;
+    }
+
+    main { padding-block: 34px 60px; }
+
+    .summary {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 16px;
+      align-items: start;
+      margin-bottom: 38px;
+      padding: 20px 22px;
+      border: 1px solid #d6e4f8;
+      border-left: 5px solid var(--blue);
+      border-radius: 12px;
+      background: #edf4ff;
+    }
+
+    .summary-mark {
+      display: grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--blue);
+      color: white;
+      font-weight: 800;
+    }
+
+    .summary p { margin: 0; }
+    .summary strong { display: block; margin-bottom: 3px; }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      line-height: 1.2;
+      letter-spacing: -.025em;
+    }
+
+    .section-intro { margin: -5px 0 18px; color: var(--muted); }
+
+    .news-list { display: grid; gap: 16px; }
+
+    article {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--card);
+      box-shadow: 0 5px 18px #1720330a;
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--blue);
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .tag::before {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--yellow);
+      content: "";
+    }
+
+    .date { color: var(--muted); font-size: .87rem; }
+    h3 { margin: 0 0 9px; font-size: 1.25rem; line-height: 1.3; }
+    article p { margin: 0 0 12px; }
+
+    .source-line { margin-top: 14px; font-size: .93rem; }
+    .score {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 15px;
+      padding: 7px 10px;
+      border-radius: 8px;
+      background: #edf7f1;
+      color: #155b39;
+      font-size: .9rem;
+      font-weight: 750;
+    }
+
+    .score-detail { margin: 8px 0 0; color: var(--muted); font-size: .9rem; }
+
+    .legend {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .legend strong { color: var(--ink); }
+    .testimony { margin-top: 42px; }
+
+    .testimony article { border-left: 4px solid #d58a00; }
+    .testimony .tag { color: #805100; }
+    .testimony .tag::before { background: #d58a00; }
+    .testimony .score { background: #fff5df; color: #805100; }
+
+    .watch {
+      margin-top: 42px;
+      padding: 25px 27px;
+      border-radius: 14px;
+      background: #172033;
+      color: white;
+    }
+
+    .watch h2 { margin-bottom: 13px; }
+    .watch ul { margin: 0; padding-left: 1.2rem; }
+    .watch li + li { margin-top: 8px; }
+    .watch a { color: #b7d6ff; }
+
+    .method {
+      margin-top: 28px;
+      padding-top: 19px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    footer {
+      padding-block: 0 32px;
+      color: var(--muted);
+      font-size: .84rem;
+    }
+
+    @media (max-width: 600px) {
+      .masthead-inner, main, footer { width: min(100% - 28px, 980px); }
+      .masthead-inner { padding-block: 34px 30px; }
+      main { padding-top: 22px; }
+      article { padding: 19px; }
+      .summary { padding: 17px; }
+    }
+
+    @media print {
+      body { background: white; }
+      .masthead { background: white; color: var(--ink); border-bottom-color: var(--yellow); }
+      .eyebrow, .dek, .dateline { color: var(--ink); }
+      .watch { background: white; color: var(--ink); border: 1px solid var(--line); }
+      .watch a { color: var(--blue); }
+      article, .summary, .watch { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <p class="eyebrow">Veille emploi · Distribution</p>
+      <h1>Recrutement chez Lidl France</h1>
+      <p class="dek">Les signaux récents sur les parcours en magasin, l’alternance et l’inclusion — en séparant les annonces de l’entreprise des témoignages individuels.</p>
+      <span class="dateline">Vérification : 25 novembre 2026</span>
+    </div>
+  </header>
+
+  <main>
+    <aside class="summary" aria-label="Synthèse">
+      <span class="summary-mark" aria-hidden="true">i</span>
+      <p><strong>À retenir</strong>Les publications LinkedIn récentes de Lidl France mettent surtout en avant l’évolution interne, l’embauche d’alternants et des initiatives d’inclusion. Je n’ai pas trouvé, dans les sources consultables, de nouvelle campagne nationale chiffrée ni d’annonce récente sur une hausse générale des salaires.</p>
+    </aside>
+
+    <section aria-labelledby="official-heading">
+      <h2 id="official-heading">Annonces et communications officielles</h2>
+      <p class="section-intro">Les données ci-dessous sont attribuées à Lidl France : elles sont vérifiables comme publications de l’entreprise, mais ne constituent pas toutes une confirmation indépendante de leurs résultats.</p>
+
+      <div class="news-list">
+        <article>
+          <div class="card-top">
+            <span class="tag">Alternance · Inclusion · Conditions de travail</span>
+            <span class="date">Publication LinkedIn : « il y a 1 semaine » au 25/11/2026</span>
+          </div>
+          <h3>Lidl annonce 52 % d’alternants embauchés à l’issue de leur contrat en 2025</h3>
+          <p>Dans un post consacré à sa Semaine « Entre Nous Diversité », l’enseigne affirme que 52 % de ses alternants 2025 ont été embauchés à la fin de leur contrat. La publication cite aussi un engagement de maintien d’au moins 4 000 salariés seniors, et des mesures dédiées aux salariés de 57 ans et plus en supermarché et en plateforme logistique. Ce sont des chiffres et engagements déclarés par l’entreprise, sans méthodologie détaillée dans le post.</p>
+          <p><strong>Périmètre :</strong> alternance, supermarchés et plateformes logistiques. La semaine thématique devait se terminer le 22 novembre ; le post annonçait également la participation au DuoDay.</p>
+          <p class="source-line"><strong>Source :</strong> <a href="https://fr.linkedin.com/posts/lidl-france_entre-nous-diversit%C3%A9-activity-7528359795083481088-G5ZB" target="_blank" rel="noopener noreferrer">publication de Lidl France sur LinkedIn</a></p>
+          <div class="score">Fiabilité : 8/10</div>
+          <p class="score-detail">Auteur identifié 2/2 · date relative vérifiable 1/2 · source primaire 2/2 · cohérence 2/2 · biais marque employeur 1/2 : chiffres internes publiés sans méthode détaillée.</p>
+        </article>
+
+        <article>
+          <div class="card-top">
+            <span class="tag">Inclusion · DuoDay · Partenariat emploi</span>
+            <span class="date">Publication LinkedIn : « il y a 5 jours » au 25/11/2026</span>
+          </div>
+          <h3>DuoDay : Lidl dit avoir accueilli « des centaines » de personnes dans ses équipes</h3>
+          <p>Lidl France indique que des personnes en situation de handicap ont formé, le temps d’une journée, des duos avec des salariés pour découvrir leurs métiers. L’opération est annoncée dans les supermarchés, plateformes logistiques et services supports, partout en France. Le post ne donne ni décompte précis, ni détail sur les embauches qui auraient pu suivre : il s’agit d’une journée de découverte, pas d’une campagne de recrutement chiffrée.</p>
+          <p class="source-line"><strong>Source :</strong> <a href="https://fr.linkedin.com/posts/lidl-france_duoday-diversit%C3%A9-lidlfrance-activity-7529212276436824064-Fd1K" target="_blank" rel="noopener noreferrer">publication de Lidl France sur LinkedIn</a></p>
+          <div class="score">Fiabilité : 8/10</div>
+          <p class="score-detail">Auteur identifié 2/2 · date relative vérifiable 1/2 · source primaire 2/2 · cohérence 2/2 · biais marque employeur 1/2 : nombre annoncé sans comptage publié.</p>
+        </article>
+
+        <article>
+          <div class="card-top">
+            <span class="tag">Magasins · Formation · Mobilité interne</span>
+            <span class="date">Publication LinkedIn : « il y a 2 heures » au 25/11/2026</span>
+          </div>
+          <h3>Lidl met en avant un parcours d’équipier devenu directeur de supermarché</h3>
+          <p>La publication raconte le parcours de Maxime Jumeau, arrivé comme équipier polyvalent en 2019 et aujourd’hui directeur du magasin de Lambersart. Lidl cite ses formations internes via L-Formation et Lidl Académie, ainsi que l’obtention de certificats de qualification professionnelle (CQP). C’est un exemple individuel de progression, pas une mesure du taux de promotion dans le réseau.</p>
+          <p class="source-line"><strong>Source :</strong> <a href="https://fr.linkedin.com/posts/lidl-france_lidlacad%C3%A9mie-d%C3%A9couvrez-le-portrait-de-activity-7531258005426737152-AEbB" target="_blank" rel="noopener noreferrer">publication de Lidl France sur LinkedIn</a></p>
+          <div class="score">Fiabilité : 7/10</div>
+          <p class="score-detail">Auteur identifié 2/2 · date relative vérifiable 1/2 · source primaire 2/2 · cohérence 1/2 · biais marque employeur 1/2 : portrait individuel à visée de valorisation RH.</p>
+        </article>
+      </div>
+
+      <aside class="legend">
+        <strong>Comment lire les notes :</strong> 2 points par critère — auteur identifié, date vérifiée, source primaire, cohérence des faits, intention/biais de marque employeur. Les dates LinkedIn accessibles étaient relatives (« il y a… ») ; les scores en tiennent compte. Une source primaire établit ce que Lidl annonce, pas nécessairement la véracité indépendante de ses indicateurs.
+      </aside>
+    </section>
+
+    <section class="testimony" aria-labelledby="testimony-heading">
+      <h2 id="testimony-heading">Témoignage individuel — à ne pas généraliser</h2>
+      <article>
+        <div class="card-top">
+          <span class="tag">Commentaire public · Candidature</span>
+          <span class="date">Commentaire affiché comme publié « il y a 1 semaine »</span>
+        </div>
+        <h3>Un candidat dit avoir reçu un refus sans entretien</h3>
+        <p>En réponse au post sur la diversité, une personne affirme que sa candidature a été rejetée sans entretien la semaine précédente et demande si son âge (44 ans) a joué. C’est un témoignage isolé : le poste, le détail du processus et la cause du refus ne sont pas documentés ni vérifiables depuis le commentaire. Il ne permet pas de conclure à une pratique générale chez Lidl.</p>
+        <p class="source-line"><strong>Source :</strong> <a href="https://fr.linkedin.com/posts/lidl-france_entre-nous-diversit%C3%A9-activity-7528359795083481088-G5ZB" target="_blank" rel="noopener noreferrer">commentaire public sous le post LinkedIn</a></p>
+        <div class="score">Fiabilité : 5/10</div>
+        <p class="score-detail">Auteur visible 2/2 · date relative 1/2 · témoignage de première main 2/2 · cohérence non vérifiable 0/2 · biais possible lié à une candidature refusée 0/2.</p>
+      </article>
+    </section>
+
+    <section class="watch" aria-labelledby="watch-heading">
+      <h2 id="watch-heading">À surveiller</h2>
+      <ul>
+        <li>Publication d’une campagne nationale d’embauche avec volumes, métiers ciblés et calendrier : aucune annonce récente de ce type n’a pu être confirmée ici.</li>
+        <li>Indicateurs d’alternance et engagements seniors : chercher une ventilation, une méthode de calcul et une confirmation extérieure du taux de 52 % et du seuil de 4 000 salariés.</li>
+        <li>Rémunération et recrutements locaux : surveiller les annonces d’accords salariaux et les offres par région ; aucune hausse générale récente vérifiée dans les sources consultées.</li>
+      </ul>
+    </section>
+
+    <section class="method" aria-label="Périmètre de la veille">
+      <p><strong>Périmètre et limites :</strong> veille rapide arrêtée au 25 novembre 2026, centrée sur les communications publiques récentes de Lidl France. Le site <a href="https://emplois.lidl.fr/" target="_blank" rel="noopener noreferrer">emplois.lidl.fr</a> est accessible mais ses pages consultées ne donnent pas de date de publication pour les chiffres ou offres affichés ; ils ne sont donc pas présentés comme une actualité récente. La recherche d’articles LSA a renvoyé une erreur 403 et aucune page LSA/Linéaires récente n’a pu être vérifiée. Le fil LinkedIn reste consultable publiquement, mais ses dates exactes ne sont pas affichées sans connexion.</p>
+      <p><strong>Rémunération :</strong> pas de nouvel élément chiffré collectif vérifiable retenu. Les rémunérations figurant dans des annonces individuelles sont variables selon le poste et la localisation et ne valent pas annonce de hausse générale.</p>
+    </section>
+  </main>
+
+  <footer>
+    Document de veille statique · Sources liées directement dans chaque fiche · Les communications de marque sont signalées comme telles.
+  </footer>
+</body>
+</html>
